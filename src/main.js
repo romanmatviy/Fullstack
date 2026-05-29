@@ -73,44 +73,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Get form data
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-
-        // Simple validation
-        if (!data.name || !data.email || !data.message) {
-            alert('Будь ласка, заповніть всі обов\'язкові поля');
-            return;
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(data.email)) {
-            alert('Будь ласка, введіть коректний email');
-            return;
-        }
-
-        // Simulate form submission
-        const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-
-        submitBtn.textContent = 'Відправляється...';
-        submitBtn.disabled = true;
-
-        setTimeout(() => {
-            alert('Дякую за повідомлення! Я зв\'яжуся з вами найближчим часом.');
-            this.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 2000);
-    });
+// Contact form helpers
+function ensureStatusEl(form) {
+  let status = form.querySelector('.form-status');
+  if (!status) {
+    status = document.createElement('div');
+    status.className = 'form-status';
+    form.appendChild(status);
+  }
+  return status;
 }
+
+function serializeForm(form) {
+  const data = new FormData(form);
+  data.append('source', window.location.href);
+  return data;
+}
+
+async function submitContactForm(form) {
+  const status = ensureStatusEl(form);
+  const btn = form.querySelector('button[type="submit"]');
+  const prevText = btn ? btn.textContent : '';
+  if (btn) { btn.disabled = true; btn.textContent = 'Надсилання...'; }
+  status.textContent = '';
+  status.classList.remove('success', 'error');
+  try {
+    const res = await fetch('https://bot.programist.top/api/contact.php', {
+      method: 'POST',
+      body: serializeForm(form)
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || !json.ok) {
+      throw new Error(json.error || 'Сталася помилка. Спробуйте пізніше.');
+    }
+    status.textContent = json.message || 'Повідомлення надіслано.';
+    status.classList.add('success');
+    form.reset();
+  } catch (err) {
+    status.textContent = err.message || 'Сталася помилка. Спробуйте пізніше.';
+    status.classList.add('error');
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = prevText; }
+  }
+}
+
+function initContactForms() {
+  document.querySelectorAll('form.contact-form').forEach(form => {
+    if (form.dataset.enhanced === '1') return;
+    form.dataset.enhanced = '1';
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      submitContactForm(form);
+    });
+  });
+}
+
+initContactForms();
 
 // Intersection Observer for animations
 const observerOptions = {

@@ -950,6 +950,32 @@ body {
     color: var(--text-secondary);
 }
 
+/* Form Status Messages */
+.form-status {
+    margin-top: 1rem;
+    padding: 0.875rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: none;
+}
+
+.form-status:not(:empty) {
+    display: block;
+}
+
+.form-status.success {
+    background: rgba(34, 197, 94, 0.12);
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.form-status.error {
+    background: rgba(239, 68, 68, 0.12);
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
