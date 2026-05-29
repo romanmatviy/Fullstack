@@ -42,47 +42,96 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Матвій Програміст",
-      "image": "https://fullstack.matviy.pp.ua/og-image.jpg",
-      "@id": "https://fullstack.matviy.pp.ua/",
-      "url": "https://fullstack.matviy.pp.ua/",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "Ukraine",
-        "postalCode": "",
-        "addressCountry": "UA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 48.3794,
-        "longitude": 31.1656
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "20:00"
-      },
-      "sameAs": [
-        "https://t.me/MatviyRoman"
-      ],
-      "description": "Професійна розробка веб-сайтів, інтернет-магазинів та CRM систем на Laravel, React та Vue.",
-      "priceRange": "$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "24"
-      }
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "name": "Матвій Програміст",
+          "image": "https://fullstack.matviy.pp.ua/og-image.jpg",
+          "@id": "https://fullstack.matviy.pp.ua/",
+          "url": "https://fullstack.matviy.pp.ua/",
+          "telephone": "",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ukraine",
+            "addressCountry": "UA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.3794,
+            "longitude": 31.1656
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          "sameAs": ["https://t.me/MatviyRoman"],
+          "description": "Професійна розробка веб-сайтів, інтернет-магазинів та CRM систем на Laravel, React та Vue.",
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "24"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Послуги веб-розробки",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Розробка на Laravel"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Створення інтернет-магазинів"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "CRM та ERP системи"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Скільки часу займає розробка інтернет-магазину?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Терміни розробки залежать від складності проєкту. В середньому створення базового інтернет-магазину займає від 3 до 6 тижнів, включаючи тестування."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Чи надаєте ви технічну підтримку після запуску?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Так, я надаю безкоштовну гарантійну технічну підтримку на 1 місяць після запуску, а також пропоную щомісячний супровід та розвиток вашого проєкту за домовленістю."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Які технології ви використовуєте?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Я спеціалізуюся на сучасному та надійному стеку технологій: Laravel, FilamentPHP для бекенду, та React.js, Vue.js, Next.js для фронтенду."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 </head>
@@ -371,7 +420,7 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./img/ecommerce_portfolio.png" alt="Розробка інтернет-магазину на Laravel">
+                            <img src="./img/ecommerce_portfolio.png" alt="Розробка інтернет-магазину на Laravel" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <h3>Інтернет-магазин</h3>
@@ -386,7 +435,7 @@
 
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./img/crm_portfolio.png" alt="Розробка CRM системи на FilamentPHP">
+                            <img src="./img/crm_portfolio.png" alt="Розробка CRM системи на FilamentPHP" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <h3>CRM система</h3>
@@ -401,7 +450,7 @@
 
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./img/laravel-programist.avif" alt="Створення корпоративного сайту на Next.js">
+                            <img src="./img/laravel-programist.avif" alt="Створення корпоративного сайту на Next.js" loading="lazy">
                         </div>
                         <div class="portfolio-content">
                             <h3>Корпоративний сайт</h3>
@@ -413,6 +462,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq" style="padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title">Часті запитання (FAQ)</h2>
+                <div class="faq-list" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+                    <details style="background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.1rem; outline: none;">Скільки часу займає розробка інтернет-магазину?</summary>
+                        <p style="margin-top: 1rem; opacity: 0.8; line-height: 1.6;">Терміни розробки залежать від складності проєкту. В середньому створення базового інтернет-магазину займає від 3 до 6 тижнів, включаючи тестування.</p>
+                    </details>
+                    <details style="background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.1rem; outline: none;">Чи надаєте ви технічну підтримку після запуску?</summary>
+                        <p style="margin-top: 1rem; opacity: 0.8; line-height: 1.6;">Так, я надаю безкоштовну гарантійну технічну підтримку на 1 місяць після запуску, а також пропоную щомісячний супровід та розвиток вашого проєкту за домовленістю.</p>
+                    </details>
+                    <details style="background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.1rem; outline: none;">Які технології ви використовуєте?</summary>
+                        <p style="margin-top: 1rem; opacity: 0.8; line-height: 1.6;">Я спеціалізуюся на сучасному та надійному стеку технологій: Laravel, FilamentPHP для бекенду, та React.js, Vue.js, Next.js для фронтенду.</p>
+                    </details>
                 </div>
             </div>
         </section>
