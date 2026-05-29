@@ -692,6 +692,14 @@ body {
 }
 
 /* Service card link */
+a.service-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
 .service-link {
     display: inline-block;
     margin-top: 1.25rem;
