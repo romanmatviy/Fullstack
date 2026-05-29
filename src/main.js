@@ -1,4 +1,4 @@
-import './style.css'
+// CSS is included via <link> in index.html
 
 // Mobile Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
