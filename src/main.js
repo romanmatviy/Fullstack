@@ -1,3 +1,5 @@
+import './style.css'
+
 // Mobile Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
@@ -73,40 +75,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Form submission
 const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-    
-    // Simple validation
-    if (!data.name || !data.email || !data.message) {
-        alert('Будь ласка, заповніть всі обов\'язкові поля');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
-        alert('Будь ласка, введіть коректний email');
-        return;
-    }
-    
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.textContent = 'Відправляється...';
-    submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        alert('Дякую за повідомлення! Я зв\'яжуся з вами найближчим часом.');
-        this.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }, 2000);
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+
+        // Simple validation
+        if (!data.name || !data.email || !data.message) {
+            alert('Будь ласка, заповніть всі обов\'язкові поля');
+            return;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(data.email)) {
+            alert('Будь ласка, введіть коректний email');
+            return;
+        }
+
+        // Simulate form submission
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+
+        submitBtn.textContent = 'Відправляється...';
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+            alert('Дякую за повідомлення! Я зв\'яжуся з вами найближчим часом.');
+            this.reset();
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }, 2000);
+    });
+}
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -134,15 +138,58 @@ document.querySelectorAll('.service-card, .tech-category, .portfolio-item').forE
 // Typing effect for hero title
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
-    const text = heroTitle.innerHTML;
+    const nodes = Array.from(heroTitle.childNodes).map(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            return { type: 'text', content: node.textContent, element: null };
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+            return { type: 'element', tag: node.tagName, content: node.textContent, className: node.className };
+        }
+        return null;
+    }).filter(Boolean);
+
     heroTitle.innerHTML = '';
     
-    let i = 0;
+    let nodeIndex = 0;
+    let charIndex = 0;
+
     const typeWriter = () => {
-        if (i < text.length) {
-            heroTitle.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50);
+        if (nodeIndex < nodes.length) {
+            const node = nodes[nodeIndex];
+
+            if (node.type === 'text') {
+                if (charIndex === 0) {
+                    const textNode = document.createTextNode('');
+                    heroTitle.appendChild(textNode);
+                    node.element = textNode;
+                }
+
+                if (charIndex < node.content.length) {
+                    node.element.textContent += node.content[charIndex];
+                    charIndex++;
+                    setTimeout(typeWriter, 30);
+                } else {
+                    nodeIndex++;
+                    charIndex = 0;
+                    setTimeout(typeWriter, 30);
+                }
+            } else if (node.type === 'element') {
+                if (charIndex === 0) {
+                    const el = document.createElement(node.tag);
+                    if (node.className) el.className = node.className;
+                    heroTitle.appendChild(el);
+                    node.element = el;
+                }
+
+                if (charIndex < node.content.length) {
+                    node.element.textContent += node.content[charIndex];
+                    charIndex++;
+                    setTimeout(typeWriter, 30);
+                } else {
+                    nodeIndex++;
+                    charIndex = 0;
+                    setTimeout(typeWriter, 30);
+                }
+            }
         }
     };
     
