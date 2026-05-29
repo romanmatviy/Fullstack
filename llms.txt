@@ -1,0 +1,44 @@
+# Матвій Програміст - Full Stack Web Developer
+
+## Про мене
+Професійна розробка веб-сайтів, інтернет-магазинів та CRM систем на Laravel, React та Vue.
+Досвід розробки сучасних та високопродуктивних веб-додатків. Проживаю в Україні.
+
+## Основні послуги
+- Розробка веб-додатків та API на Laravel
+- Створення інтернет-магазинів (Custom Laravel, WooCommerce, OpenCart, PrestaShop)
+- Розробка корпоративних CRM та ERP систем (FilamentPHP)
+
+## Стек Технологій
+- Backend: PHP 8+, Laravel, REST API, MySQL, SQL
+- Frontend: JavaScript (ES6+), Vue.js, React, Next.js, Alpine.js
+- Design & Styling: CSS3, SCSS/Sass, Tailwind CSS, Bootstrap, HTML5
+- CMS & E-commerce: WordPress, PrestaShop, WooCommerce, OpenCart
+- Tools & DevOps: Figma, Git, Docker, AWS/VPS, Postman, Flaticon
+
+## Портфоліо
+1. Інтернет-магазин - Повнофункціональний e-commerce на Laravel з FilamentPHP адмін-панеллю (Стек: Laravel, Vue.js, MySQL).
+2. CRM система - Корпоративна система управління клієнтами та бізнес-процесами (Стек: FilamentPHP, Laravel, REST API).
+3. Корпоративний сайт - Сучасний багатомовний сайт з високою продуктивністю (Стек: Next.js, React, SCSS).
+
+## Корисні сервіси та мої проєкти
+- Monitor Test (Тестування монітора) - https://monitortest.pp.ua
+- Key Test (Тестування клавіатури) - https://keytest.pp.ua
+- PHP Course (Курс програмування) - https://php.apartner.pro
+- HostPro (Надійний хостинг) - https://hostpro.apartner.pro/
+- Інші проєкти: Programist.pp.ua, Hire Web Developer, Apartner.pro, IndexFast, Invoice Maker.
+
+## Часті запитання (FAQ)
+Q: Скільки часу займає розробка інтернет-магазину?
+A: В середньому створення базового інтернет-магазину займає від 3 до 6 тижнів, включаючи тестування.
+
+Q: Чи надаєте ви технічну підтримку після запуску?
+A: Так, я надаю безкоштовну гарантійну технічну підтримку на 1 місяць після запуску.
+
+Q: Які технології ви використовуєте?
+A: Laravel, FilamentPHP для бекенду, та React.js, Vue.js, Next.js для фронтенду.
+
+## Контакти
+- Telegram: https://t.me/MatviyRoman
+- Email: info@matviy.pp.ua
+- Робочі години: Пн-Сб, 09:00 - 20:00
