@@ -12,7 +12,7 @@
 ## Стек Технологій
 - Backend: PHP 8+, Laravel, REST API, MySQL, SQL
 - Frontend: JavaScript (ES6+), Vue.js, React, Next.js, Alpine.js
-- Design & Styling: CSS3, SCSS/Sass, Tailwind CSS, Bootstrap, HTML5
+- Design & Styling: CSS3, SCSS/Sass, Tailwind CSS, Bootstrap, HTML5, Material UI
 - CMS & E-commerce: WordPress, PrestaShop, Woo Commerce, OpenCart
 - Tools & DevOps: Figma, Git, Docker, AWS/VPS, Postman, Flaticon
 
