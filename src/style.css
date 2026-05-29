@@ -691,6 +691,23 @@ body {
     opacity: 0.6;
 }
 
+/* Service card link */
+.service-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: gap 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+}
+
+.service-link:hover {
+    opacity: 1;
+    letter-spacing: 0.03em;
+}
+
 /* FAQ Section */
 .faq {
     padding: 80px 0;
