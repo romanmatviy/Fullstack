@@ -1,19 +1,82 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Послуги програміста - Розробка та підтримка проєктів</title>
+
+    <title>Матвій Програміст — Розробка сайтів, Laravel, React, Е-commerce</title>
+    <meta name="description" content="Професійна розробка веб-сайтів, інтернет-магазинів та складних систем на Laravel, React та Vue. Послуги програміста в Україні: від лендінгів до CRM.">
+    <meta name="keywords" content="розробка сайтів, програміст laravel, створення інтернет-магазину, послуги програміста україна, веб-розробка, react розробник, filamentphp, розробка crm">
+    <meta name="author" content="Матвій">
+    <link rel="canonical" href="https://fullstack.matviy.pp.ua/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fullstack.matviy.pp.ua/">
+    <meta property="og:title" content="Матвій Програміст — Професійна веб-розробка">
+    <meta property="og:description" content="Створюю сучасні веб-додатки, інтернет-магазини та корпоративні системи. Якісний код та технічна підтримка.">
+    <meta property="og:image" content="https://fullstack.matviy.pp.ua/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fullstack.matviy.pp.ua/">
+    <meta property="twitter:title" content="Матвій Програміст — Професійна веб-розробка">
+    <meta property="twitter:description" content="Створюю сучасні веб-додатки, інтернет-магазини та корпоративні системи. Якісний код та технічна підтримка.">
+    <meta property="twitter:image" content="https://fullstack.matviy.pp.ua/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Матвій Програміст",
+      "image": "https://fullstack.matviy.pp.ua/og-image.jpg",
+      "@id": "https://fullstack.matviy.pp.ua/",
+      "url": "https://fullstack.matviy.pp.ua/",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Ukraine",
+        "postalCode": "",
+        "addressCountry": "UA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.3794,
+        "longitude": 31.1656
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://t.me/MatviyRoman"
+      ],
+      "description": "Професійна розробка веб-сайтів, інтернет-магазинів та CRM систем на Laravel, React та Vue."
+    }
+    </script>
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="Головна навігація">
             <div class="nav-brand">
-                <h2>Матвій Програміст</h2>
+                <a href="/" style="text-decoration: none;"><h2>Матвій Програміст</h2></a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#services">Послуги</a></li>
@@ -291,11 +354,11 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce проєкт">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800" alt="Розробка інтернет-магазину на Laravel">
                         </div>
                         <div class="portfolio-content">
                             <h3>Інтернет-магазин</h3>
-                            <p>Повнофункціональний e-commerce на Laravel з адмін-панеллю</p>
+                            <p>Повнофункціональний e-commerce на Laravel з FilamentPHP адмін-панеллю</p>
                             <div class="portfolio-tech">
                                 <span>Laravel</span>
                                 <span>Vue.js</span>
@@ -306,11 +369,11 @@
                     
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CRM система">
+                            <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=800" alt="Розробка CRM системи на FilamentPHP">
                         </div>
                         <div class="portfolio-content">
                             <h3>CRM система</h3>
-                            <p>Корпоративна система управління клієнтами з FilamentPHP</p>
+                            <p>Корпоративна система управління клієнтами та бізнес-процесами</p>
                             <div class="portfolio-tech">
                                 <span>FilamentPHP</span>
                                 <span>Laravel</span>
@@ -321,11 +384,11 @@
                     
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Корпоративний сайт">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Створення корпоративного сайту на Next.js">
                         </div>
                         <div class="portfolio-content">
                             <h3>Корпоративний сайт</h3>
-                            <p>Сучасний багатомовний сайт з адаптивним дизайном</p>
+                            <p>Сучасний багатомовний сайт з високою продуктивністю на Next.js</p>
                             <div class="portfolio-tech">
                                 <span>Next.js</span>
                                 <span>React</span>
@@ -357,28 +420,21 @@
                         
                         <div class="contact-methods">
                             <div class="contact-method">
-                                <span class="contact-icon">📧</span>
+                                <span class="contact-icon" aria-hidden="true">📧</span>
                                 <div>
                                     <strong>Email</strong>
-                                    <p>contact@example.com</p>
+                                    <p><a href="mailto:info@matviy.pp.ua">info@matviy.pp.ua</a></p>
                                 </div>
                             </div>
                             
                             <div class="contact-method">
-                                <span class="contact-icon">📱</span>
+                                <span class="contact-icon" aria-hidden="true">📱</span>
                                 <div>
                                     <strong>Telegram</strong>
-                                    <p>@your_telegram</p>
+                                    <p><a href="https://t.me/MatviyRoman" target="_blank" rel="noopener noreferrer">@MatviyRoman</a></p>
                                 </div>
                             </div>
                             
-                            <div class="contact-method">
-                                <span class="contact-icon">💼</span>
-                                <div>
-                                    <strong>LinkedIn</strong>
-                                    <p>linkedin.com/in/yourprofile</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     
@@ -438,6 +494,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
