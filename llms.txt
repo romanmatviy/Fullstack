@@ -1,4 +1,4 @@
-﻿# Матвій Програміст - Full Stack Web Developer
+# Матвій Програміст - Full Stack Web Developer
 
 ## Про мене
 Професійна розробка веб-сайтів, інтернет-магазинів та CRM систем на Laravel, React та Vue.
