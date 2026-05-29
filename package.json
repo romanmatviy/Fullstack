@@ -1,18 +1,21 @@
 {
-  "name": "project",
+  "name": "matviy-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Portfolio of Matviy Programmer",
+  "main": "main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "developer",
+    "frontend"
+  ],
+  "author": "Matviy",
+  "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
     "vite": "^5.0.0"
   }
 }

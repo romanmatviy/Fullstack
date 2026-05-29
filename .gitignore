@@ -1,5 +1,5 @@
 node_modules
 dist
 dev_server.log
-package-lock.json
+server.log
 .DS_Store
