@@ -753,6 +753,109 @@ body {
     color: #e2e8f0;
 }
 
+/* Other Projects Section */
+.other-projects {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.other-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.other-project-card {
+    display: flex;
+    align-items: center;
+    background: var(--bg-primary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.other-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.other-project-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gradient-primary);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.other-project-card:hover::before {
+    transform: scaleY(1);
+}
+
+.other-project-card .project-icon {
+    font-size: 2rem;
+    margin-right: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: background 0.3s ease;
+}
+
+.other-project-card:hover .project-icon {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+.project-details h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+}
+
+.other-project-card:hover .project-details h3 {
+    color: var(--primary-color);
+}
+
+.project-details p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.project-arrow {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+.other-project-card:hover .project-arrow {
+    transform: translateX(0);
+    opacity: 1;
+    color: var(--primary-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
