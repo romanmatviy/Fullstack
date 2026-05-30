@@ -1,177 +1,178 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
-
-<head>
+<html lang="en" prefix="og: https://ogp.me/ns#"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Matviy Developer — Розробка сайтів, Laravel, React, Е-commerce</title>
-    <meta name="description"
-        content="Професійна розробка веб-сайтів, інтернет-магазинів та складних систем на Laravel, React та Vue. Послуги програміста в Україні: від лендінгів до CRM.">
-    <meta name="keywords"
-        content="розробка сайтів, програміст laravel, створення інтернет-магазину, послуги програміста україна, веб-розробка, react розробник, Filament PHP, розробка crm">
-    <meta name="author" content="Матвій">
+    <title>Matviy Developer - Website Development, Laravel, React, E-commerce</title>
+    <meta name="description" content="Professional development of websites, online stores and complex systems on Laravel, React and Vue. Programmer services in Ukraine: from landing pages to CRM.">
+    <meta name="keywords" content="site development, laravel programmer, creating an online store, Ukrainian programmer services, web development, react developer, Filament PHP, crm development">
+    <meta name="author" content="Matviy">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <link rel="stylesheet" href="/src/style.css?v=1.1">
-    <link rel="canonical" href="https://fullstack.matviy.pp.ua/">
+    <link rel="canonical" href="https://fullstack.matviy.pp.ua/en/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fullstack.matviy.pp.ua/">
-    <meta property="og:title" content="Matviy Developer — Професійна веб-розробка">
-    <meta property="og:description"
-        content="Створюю сучасні веб-додатки, інтернет-магазини та корпоративні системи. Якісний код та технічна підтримка.">
+    <meta property="og:url" content="https://fullstack.matviy.pp.ua/en/">
+    <meta property="og:title" content="Matviy Developer — Professional web development">
+    <meta property="og:description" content="I create modern web applications, online stores and corporate systems. Quality code and technical support.">
     <meta property="og:image" content="https://fullstack.matviy.pp.ua/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://fullstack.matviy.pp.ua/">
-    <meta property="twitter:title" content="Matviy Developer — Професійна веб-розробка">
-    <meta property="twitter:description"
-        content="Створюю сучасні веб-додатки, інтернет-магазини та корпоративні системи. Якісний код та технічна підтримка.">
+    <meta property="twitter:url" content="https://fullstack.matviy.pp.ua/en/">
+    <meta property="twitter:title" content="Matviy Developer — Professional web development">
+    <meta property="twitter:description" content="I create modern web applications, online stores and corporate systems. Quality code and technical support.">
     <meta property="twitter:image" content="https://fullstack.matviy.pp.ua/og-image.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "ProfessionalService",
+      "name": "Matviy Developer",
+      "image": "https://fullstack.matviy.pp.ua/og-image.jpg",
+      "@id": "https://fullstack.matviy.pp.ua/",
+      "url": "https://fullstack.matviy.pp.ua/",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ukraine",
+        "addressCountry": "UA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.3794,
+        "longitude": 31.1656
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://t.me/MatviyRoman"
+      ],
+      "description": "Professional website, e-commerce, and CRM system development with Laravel, React, and Vue.",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "24"
+      },
+      "review": [
         {
-          "@type": "ProfessionalService",
-          "name": "Matviy Developer",
-          "image": "https://fullstack.matviy.pp.ua/og-image.jpg",
-          "@id": "https://fullstack.matviy.pp.ua/",
-          "url": "https://fullstack.matviy.pp.ua/",
-          "telephone": "",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Ukraine",
-            "addressCountry": "UA"
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Oleksandr"
           },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 48.3794,
-            "longitude": 31.1656
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            "opens": "09:00",
-            "closes": "20:00"
+          "reviewBody": "Matviy developed an e-commerce store on Laravel for us. Everything was delivered on time and with excellent quality. We especially liked the convenient Filament admin panel. Highly recommended!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Iryna"
           },
-          "sameAs": ["https://t.me/MatviyRoman"],
-          "description": "Професійна розробка веб-сайтів, інтернет-магазинів та CRM систем на Laravel, React та Vue.",
-          "priceRange": "$$",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "24"
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
           },
-          "review": [
-            {
-              "@type": "Review",
-              "author": {
-                "@type": "Person",
-                "name": "Олександр"
-              },
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5"
-              },
-              "reviewBody": "Matviy developed an online store on Laravel for us. Everything was done on time and with great quality. Especially liked the convenient Filament admin panel. Highly recommended!"
-            },
-            {
-              "@type": "Review",
-              "author": {
-                "@type": "Person",
-                "name": "Ірина"
-              },
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5"
-              },
-              "reviewBody": "Ordered a CRM system to automate company processes. Got exactly what we wanted. Matviy is always in touch and ready to help with any questions."
-            },
-            {
-              "@type": "Review",
-              "author": {
-                "@type": "Person",
-                "name": "Михайло"
-              },
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5"
-              },
-              "reviewBody": "Excellent programmer! Helped us optimize an existing project and wrote a cool REST API for a mobile app. The code is clean and understandable."
+          "reviewBody": "We ordered a CRM system to automate company processes. We got exactly what we wanted. Matviy is always in touch and ready to help with any questions."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Mykhailo"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "reviewBody": "Excellent developer! He helped us optimize an existing project and wrote a great REST API for a mobile app. The code is clean and understandable."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Laravel Development"
             }
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Послуги веб-розробки",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Розробка на Laravel"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Створення інтернет-магазинів"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "CRM та ERP системи"
-                }
-              }
-            ]
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce Store Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "CRM and ERP Systems"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does e-commerce store development take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Development timelines depend on project complexity. On average, a basic e-commerce store takes 3 to 6 weeks, including testing."
           }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Скільки часу займає розробка інтернет-магазину?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Timeline розробки залежать від складності проєкту. В середньому створення базового інтернет-магазину займає від 3 до 6 тижнів, включаючи тестування."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Чи надаєте ви технічну підтримку після запуску?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Так, я надаю безкоштовну гарантійну технічну підтримку на 1 місяць після запуску, а також пропоную щомісячний супровід та розвиток вашого проєкту за домовленістю."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Які технології ви використовуєте?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Я спеціалізуюся на сучасному та надійному стеку технологій: Laravel, Filament PHP для бекенду, та React.js, Vue.js, Next.js для фронтенду."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Do you provide technical support after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, I provide one month of free warranty support after launch and can also offer monthly maintenance and project development by agreement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I specialize in a modern, reliable stack: Laravel and Filament PHP for the backend, plus React.js, Vue.js, and Next.js for the frontend."
+          }
         }
       ]
     }
-    </script>
+  ]
+}</script>
 
 
 <style>
@@ -196,19 +197,19 @@
 
 <body>
     <header class="header">
-        <nav class="nav" aria-label="Головна навігація">
+        <nav class="nav" aria-label="Main navigation">
             <div class="nav-brand">
-                <a href="/" style="text-decoration: none;">
+                <a href="/en/" style="text-decoration: none;">
                     <h2>Matviy Developer</h2>
                 </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#services">Services</a></li>
-                <li><a href="#technologies">Tech Stack</a></li>
+                <li><a href="#technologies">Technologies</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Відкрити меню">
+            <button class="nav-toggle" aria-label="Open the menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -221,16 +222,16 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">
-                        Професійна розробка та підтримка
-                        <span class="highlight">веб-проєктів</span>
+                        Professional development and support
+                        <span class="highlight">web projects</span>
                     </h1>
                     <p class="hero-description">
-                        Створюю сучасні веб-додатки, інтернет-магазини та корпоративні системи.
-                        Від ідеї до готового продукту з подальшою технічною підтримкою.
+                        I create modern web applications, online stores and corporate systems. 
+From an idea to a finished product with further technical support.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Замовити проєкт</a>
-                        <a href="#portfolio" class="btn btn-secondary">View Work</a>
+                        <a href="#contact" class="btn btn-primary">Order the project</a>
+                        <a href="#portfolio" class="btn btn-secondary">View works</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -249,7 +250,7 @@
                             </div>
                             <div class="code-line indent">
                                 <span class="code-keyword">return</span>
-                                <span class="code-string">'Якісний код'</span>;
+                                <span class="code-string">'Quality Code'</span>;
                             </div>
                             <div class="code-line">}</div>
                         </div>
@@ -260,78 +261,78 @@
 
         <section id="services" class="services">
             <div class="container">
-                <h2 class="section-title">My Services</h2>
+                <h2 class="section-title">My services</h2>
                 <div class="services-grid">
                     <a href="/en/services/web-development.html" class="service-card">
                         <div class="service-icon">🌐</div>
-                        <h3>Web Development</h3>
-                        <p>Creating modern websites and applications with responsive design and high performance</p>
+                        <h3>Web development</h3>
+                        <p>Creation of modern websites and applications with responsive design and high performance</p>
                         <ul class="service-features">
-                            <li>Landing pages & corporate sites</li>
+                            <li>Landings and corporate sites</li>
                             <li>SPA applications</li>
-                            <li>Responsive design</li>
+                            <li>Adaptive layout</li>
                         </ul>
-                        <span class="service-link">Learn more →</span>
+                        <span class="service-link">Read more →</span>
                     </a>
 
                     <a href="/en/services/e-commerce.html" class="service-card">
                         <div class="service-icon">🛒</div>
-                        <h3>E-commerce</h3>
-                        <p>Розробка повнофункціональних e-commerce рішень з інтеграцією платіжних систем</p>
+                        <h3>Online stores</h3>
+                        <p>Development of fully functional E-commerce solutions with integration of payment systems</p>
                         <ul class="service-features">
-                            <li>PrestaShop розробка</li>
+                            <li>PrestaShop development</li>
                             <li>WordPress Woo Commerce</li>
-                            <li>Кастомні рішення</li>
+                            <li>Custom solutions</li>
                         </ul>
-                        <span class="service-link">Learn more →</span>
+                        <span class="service-link">Read more →</span>
                     </a>
 
                     <a href="/en/services/backend-development.html" class="service-card">
                         <div class="service-icon">⚙️</div>
-                        <h3>Backend Development</h3>
-                        <p>Створення надійних серверних рішень з REST API та інтеграціями</p>
+                        <h3>Backend development</h3>
+                        <p>Creating reliable server solutions with REST APIs and integrations</p>
                         <ul class="service-features">
-                            <li>Laravel додатки</li>
-                            <li>REST API розробка</li>
-                            <li>Integrations з сервісами</li>
+                            <li>Laravel applications</li>
+                            <li>REST API development</li>
+                            <li>Integration with services</li>
                         </ul>
-                        <span class="service-link">Learn more →</span>
+                        <span class="service-link">Read more →</span>
                     </a>
 
                     <a href="/en/services/ui-ux-design.html" class="service-card">
                         <div class="service-icon">🎨</div>
-                        <h3>UI/UX Design</h3>
-                        <p>Створення інтуїтивних інтерфейсів та прототипування в Figma</p>
+                        <h3>UI/UX design</h3>
+                        <p>Creating intuitive interfaces and prototyping in Figma</p>
                         <ul class="service-features">
-                            <li>Дизайн інтерфейсів</li>
-                            <li>Прототипування</li>
-                            <li>Брендинг</li>
+                            <li>Design of interfaces</li>
+                            <li>Prototyping</li>
+                            <li>Branding</li>
                         </ul>
-                        <span class="service-link">Learn more →</span>
+                        <span class="service-link">Read more →</span>
                     </a>
 
                     <a href="/en/services/technical-support.html" class="service-card">
                         <div class="service-icon">🔧</div>
-                        <h3>Technical Support</h3>
-                        <p>Супровід проєктів, оновлення, виправлення помилок та оптимізація</p>
+                        <h3>Technical support</h3>
+                        <p>Project support, updates, bug fixes and optimization</p>
                         <ul class="service-features">
                             <li>Regular updates</li>
                             <li>Security monitoring</li>
-                            <li>Speed optimization</li>
+                            <li>Speed ​​optimization</li>
                         </ul>
-                        <span class="service-link">Learn more →</span>
+                        <span class="service-link">Read more →</span>
                     </a>
 
                     <a href="/en/services/crm-erp.html" class="service-card">
                         <div class="service-icon">📊</div>
-                        <h3>CRM/ERP Systems</h3>
-                        <p>Розробка корпоративних систем управління з Filament PHP</p>
+                        <h3>CRM/ERP systems</h3>
+                        <p>Development of corporate management systems with Filament PHP</p>
                         <ul class="service-features">
-                            <li>Системи управління</li>
-                            <li>Автоматизація процесів</li>
-                            <li>Reporting & analytics</li>
+                            <li>Management systems</li>
+                            <li>Process automation</li>
+                            <li>Reporting and analytics</li>
                         </ul>
-                        <span class="service-link">Learn more →</span>
+                        <span class="service-link">Read more →</span>
                     </a>
                 </div>
             </div>
@@ -339,7 +340,7 @@
 
         <section id="technologies" class="technologies">
             <div class="container">
-                <h2 class="section-title">Technologies & Tools</h2>
+                <h2 class="section-title">Technologies and tools</h2>
                 <div class="tech-categories">
                     <div class="tech-category">
                         <h3>Frontend</h3>
@@ -402,7 +403,7 @@
                     </div>
 
                     <div class="tech-category">
-                        <h3>Styling & Design</h3>
+                        <h3>Stylization</h3>
                         <div class="tech-grid">
                             <div class="tech-item">
                                 <span class="tech-icon">🎨</span>
@@ -432,7 +433,7 @@
                     </div>
 
                     <div class="tech-category">
-                        <h3>CMS & E-commerce</h3>
+                        <h3>CMS &amp; E-commerce</h3>
                         <div class="tech-grid">
                             <div class="tech-item">
                                 <span class="tech-icon">📝</span>
@@ -444,11 +445,11 @@
                             </div>
                             <div class="tech-item">
                                 <span class="tech-icon">🏢</span>
-                                <span>CMS системи</span>
+                                <span>CMS systems</span>
                             </div>
                             <div class="tech-item">
                                 <span class="tech-icon">📈</span>
-                                <span>ERP системи</span>
+                                <span>ERP systems</span>
                             </div>
                             <div class="tech-item">
                                 <span class="tech-icon">🛒</span>
@@ -462,7 +463,7 @@
                     </div>
 
                     <div class="tech-category">
-                        <h3>Інструменти</h3>
+                        <h3>Tools</h3>
                         <div class="tech-grid">
                             <div class="tech-item">
                                 <span class="tech-icon">🎨</span>
@@ -492,7 +493,7 @@
                     </div>
 
                     <div class="tech-category">
-                        <h3>Databases & Infrastructure</h3>
+                        <h3>Bases and Infrastructure</h3>
                         <div class="tech-grid">
                             <div class="tech-item">
                                 <span class="tech-icon">🐘</span>
@@ -530,12 +531,11 @@
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./img/ecommerce_portfolio.png" alt="Розробка інтернет-магазину на Laravel"
-                                loading="lazy">
+                            <img src="./img/ecommerce_portfolio.png" alt="Development of an online store on Laravel" loading="lazy">
                         </div>
                         <div class="portfolio-content">
-                            <h3>Інтернет-магазин</h3>
-                            <p>Повнофункціональний e-commerce на Laravel з Filament PHP адмін-панеллю</p>
+                            <h3>Online store</h3>
+                            <p>Fully functional E-commerce on Laravel with Filament PHP admin panel</p>
                             <div class="portfolio-tech">
                                 <span>Laravel</span>
                                 <span>Vue.js</span>
@@ -546,11 +546,11 @@
 
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./img/crm_portfolio.png" alt="Розробка CRM системи на Filament PHP" loading="lazy">
+                            <img src="./img/crm_portfolio.png" alt="Development of CRM system on Filament PHP" loading="lazy">
                         </div>
                         <div class="portfolio-content">
-                            <h3>CRM система</h3>
-                            <p>Корпоративна система управління клієнтами та бізнес-процесами</p>
+                            <h3>CRM system</h3>
+                            <p>Corporate customer and business process management system</p>
                             <div class="portfolio-tech">
                                 <span>Filament PHP</span>
                                 <span>Laravel</span>
@@ -561,12 +561,11 @@
 
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./img/laravel-programist.avif" alt="Створення корпоративного сайту на Next.js"
-                                loading="lazy">
+                            <img src="./img/laravel-programist.avif" alt="Creation of a corporate site on Next.js" loading="lazy">
                         </div>
                         <div class="portfolio-content">
-                            <h3>Corporate Site</h3>
-                            <p>Сучасний багатомовний сайт з високою продуктивністю на Next.js</p>
+                            <h3>Corporate site</h3>
+                            <p>Modern multilingual site with high performance on Next.js</p>
                             <div class="portfolio-tech">
                                 <span>Next.js</span>
                                 <span>React</span>
@@ -580,13 +579,13 @@
 
         <section id="other-projects" class="other-projects">
             <div class="container">
-                <h2 class="section-title">Корисні сервіси та мої проєкти</h2>
+                <h2 class="section-title">Useful services and my projects</h2>
                 <div class="other-projects-grid">
                     <a href="https://monitortest.pp.ua" target="_blank" rel="noopener" class="other-project-card">
                         <span class="project-icon">🖥️</span>
                         <div class="project-details">
                             <h3>Monitor Test</h3>
-                            <p>Testing монітора</p>
+                            <p>Monitor testing</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -594,7 +593,7 @@
                         <span class="project-icon">⌨️</span>
                         <div class="project-details">
                             <h3>Key Test</h3>
-                            <p>Testing клавіатури</p>
+                            <p>Keyboard testing</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -602,7 +601,7 @@
                         <span class="project-icon">🐘</span>
                         <div class="project-details">
                             <h3>PHP Course</h3>
-                            <p>Курс програмування</p>
+                            <p>Programming course</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -610,7 +609,7 @@
                         <span class="project-icon">☁️</span>
                         <div class="project-details">
                             <h3>HostPro</h3>
-                            <p>Надійний хостинг</p>
+                            <p>Reliable hosting</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -618,7 +617,7 @@
                         <span class="project-icon">👨‍💻</span>
                         <div class="project-details">
                             <h3>Programist.pp.ua</h3>
-                            <p>Послуги програміста</p>
+                            <p>Programmer services</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -626,7 +625,7 @@
                         <span class="project-icon">🌐</span>
                         <div class="project-details">
                             <h3>Hire Web Developer</h3>
-                            <p>Web Development</p>
+                            <p>Web development</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -634,7 +633,7 @@
                         <span class="project-icon">🇺🇦</span>
                         <div class="project-details">
                             <h3>HireWebDeveloper</h3>
-                            <p>Web Development</p>
+                            <p>Web development</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -642,7 +641,7 @@
                         <span class="project-icon">🤝</span>
                         <div class="project-details">
                             <h3>Apartner.pro</h3>
-                            <p>Розробка сайтів</p>
+                            <p>Website development</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -650,7 +649,7 @@
                         <span class="project-icon">⚡</span>
                         <div class="project-details">
                             <h3>IndexFast</h3>
-                            <p>Швидка індексація сайтів</p>
+                            <p>Fast indexing of sites</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -658,7 +657,7 @@
                         <span class="project-icon">📄</span>
                         <div class="project-details">
                             <h3>Invoice Maker</h3>
-                            <p>Створення інвойсів</p>
+                            <p>Creation of invoices</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -666,7 +665,7 @@
                         <span class="project-icon">📊</span>
                         <div class="project-details">
                             <h3>Hostings.pp.ua</h3>
-                            <p>Огляд хостингів</p>
+                            <p>Overview of hosting</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -674,7 +673,7 @@
                         <span class="project-icon">💻</span>
                         <div class="project-details">
                             <h3>PC Test</h3>
-                            <p>Testing комп'ютера</p>
+                            <p>Computer testing</p>
                         </div>
                         <span class="project-arrow">→</span>
                     </a>
@@ -684,37 +683,37 @@
 
         <section id="testimonials" class="testimonials">
             <div class="container">
-                <h2 class="section-title">Client Testimonials</h2>
+                <h2 class="section-title">Customer reviews</h2>
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Matviy developed an online store on Laravel for us. Everything was done on time and with great quality. Especially liked the convenient Filament admin panel. Highly recommended!"</p>
+                        <p class="testimonial-text">"Matviy developed an online store for us on Laravel. Everything was done on time and very well. I especially liked the convenient administration on Filament. I recommend it!"</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">О</div>
+                            <div class="author-avatar">O</div>
                             <div class="author-info">
-                                <h4>Олександр</h4>
+                                <h4>Oleksandr</h4>
                                 <span>E-commerce Business Owner</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Ordered a CRM system to automate company processes. Got exactly what we wanted. Matviy is always in touch and ready to help with any questions."</p>
+                        <p class="testimonial-text">"We ordered a CRM system to automate the company's processes. We got exactly what we wanted. Matviy is always in touch and ready to help with any questions."</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">І</div>
+                            <div class="author-avatar">I</div>
                             <div class="author-info">
-                                <h4>Ірина</h4>
+                                <h4>Iryna</h4>
                                 <span>Head of Sales</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Excellent programmer! Helped us optimize an existing project and wrote a cool REST API for a mobile app. The code is clean and understandable."</p>
+                        <p class="testimonial-text">"Great programmer! Helped us optimize an existing project and wrote a cool REST API for a mobile app. The code is clean and clear."</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">М</div>
+                            <div class="author-avatar">M</div>
                             <div class="author-info">
-                                <h4>Михайло</h4>
+                                <h4>Mykhailo</h4>
                                 <span>Tech Lead</span>
                             </div>
                         </div>
@@ -725,23 +724,23 @@
 
         <section id="faq" class="faq">
             <div class="container">
-                <h2 class="section-title">Часті запитання (FAQ)</h2>
+                <h2 class="section-title">Frequently asked questions (FAQ)</h2>
                 <div class="faq-list">
                     <details class="faq-item">
-                        <summary class="faq-summary">Скільки часу займає розробка інтернет-магазину?</summary>
-                        <p class="faq-text">Timeline розробки залежать від складності проєкту. В середньому створення
-                            базового інтернет-магазину займає від 3 до 6 тижнів, включаючи тестування.</p>
+                        <summary class="faq-summary">How long does it take to develop an online store?</summary>
+                        <p class="faq-text">Development terms depend on the complexity of the project. On average creation 
+basic online store takes 3 to 6 weeks, including testing.</p>
                     </details>
                     <details class="faq-item">
-                        <summary class="faq-summary">Чи надаєте ви технічну підтримку після запуску?</summary>
-                        <p class="faq-text">Так, я надаю безкоштовну гарантійну технічну підтримку на 1 місяць після
-                            запуску, а також пропоную щомісячний супровід та розвиток вашого проєкту за домовленістю.
+                        <summary class="faq-summary">Do you provide technical support after launch?</summary>
+                        <p class="faq-text">Yes, I provide free warranty technical support for 1 month after 
+launch, and also offer monthly support and development of your project by agreement.
                         </p>
                     </details>
                     <details class="faq-item">
-                        <summary class="faq-summary">Які технології ви використовуєте?</summary>
-                        <p class="faq-text">Я спеціалізуюся на сучасному та надійному стеку технологій: Laravel,
-                            Filament PHP для бекенду, та React.js, Vue.js, Next.js для фронтенду.</p>
+                        <summary class="faq-summary">What technologies do you use?</summary>
+                        <p class="faq-text">I specialize in a modern and reliable technology stack: Laravel, 
+Filament PHP for the backend, and React.js, Vue.js, Next.js for the frontend.</p>
                     </details>
                 </div>
             </div>
@@ -750,20 +749,20 @@
         <section class="cta">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Готові розпочати проєкт?</h2>
-                    <p>Зв'яжіться зі мною для обговорення деталей вашого проєкту</p>
-                    <a href="#contact" class="btn btn-primary">Написати зараз</a>
+                    <h2>Ready to start the project?</h2>
+                    <p>Contact me to discuss the details of your project</p>
+                    <a href="#contact" class="btn btn-primary">Write now</a>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contacts</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>Contact Me</h3>
-                        <p>Готовий обговорити ваш проєкт та надати професійну консультацію</p>
+                        <h3>Contact me</h3>
+                        <p>Ready to discuss your project and provide professional advice</p>
 
                         <div class="contact-methods">
                             <div class="contact-method">
@@ -778,8 +777,7 @@
                                 <span class="contact-icon" aria-hidden="true">📱</span>
                                 <div>
                                     <strong>Telegram</strong>
-                                    <p><a href="https://t.me/MatviyRoman" target="_blank"
-                                            rel="noopener noreferrer">@MatviyRoman</a></p>
+                                    <p><a href="https://t.me/MatviyRoman" target="_blank" rel="noopener noreferrer">@MatviyRoman</a></p>
                                 </div>
                             </div>
 
@@ -789,34 +787,33 @@
                     <form class="contact-form">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required="">
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required="">
                         </div>
 
                         <div class="form-group">
-                            <label for="project">Тип проєкту</label>
+                            <label for="project">Project type</label>
                             <select id="project" name="project">
-                                <option value="">Оберіть тип проєкту</option>
-                                <option value="website">Веб-сайт</option>
-                                <option value="ecommerce">Інтернет-магазин</option>
-                                <option value="webapp">Веб-додаток</option>
-                                <option value="crm">CRM/ERP система</option>
-                                <option value="support">Technical Support</option>
-                                <option value="other">Інше</option>
+                                <option value="">Choose a project type</option>
+                                <option value="website">Website</option>
+                                <option value="ecommerce">Online store</option>
+                                <option value="webapp">Web application</option>
+                                <option value="crm">CRM/ERP system</option>
+                                <option value="support">Technical support</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5"
-                                placeholder="Розкажіть детальніше про ваш проєкт..."></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your project..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Відправити повідомлення</button>
+                        <button type="submit" class="btn btn-primary">Send a message</button>
                     </form>
                 </div>
             </div>
@@ -828,22 +825,23 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Matviy Developer</h3>
-                    <p>Professional Web Development</p>
+                    <p>Professional development of web projects</p>
                 </div>
                 <div class="footer-links">
                     <a href="#services">Services</a>
-                    <a href="#technologies">Tech Stack</a>
+                    <a href="#technologies">Technologies</a>
                     <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">Contacts</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Всі права захищені</p>
+                <p>© 2025 All rights reserved</p>
             </div>
         </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
-</body>
 
-</html>
+
+
+</body></html>
